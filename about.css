@@ -1,0 +1,556 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#overAll{
+  overflow: hidden;
+}
+/* header footer start*/
+nav {
+  height: 80px;
+  background: gray;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  padding: 0px 20px 0px 50px;
+  z-index: 1;
+}
+/* label{
+  display: hidden;
+
+} */
+.menu-btn{
+  display: none;
+}
+nav .logo {
+  width: 90px;
+}
+
+svg.svg-inline--fa.fa-bars {
+  color: black;
+  font-size: 23px;
+ 
+}
+#click {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 30px;
+  font-size: 20px;
+
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 0px 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  border: 1px solid #fff;
+  color: black;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#cartim{
+  width: 30px;
+}
+.cart-quantity {
+  padding-left: 10px;
+ 
+}
+
+
+/* Media Query */
+@media (max-width: 940px) {
+  nav .logo {
+      color: #fff;
+      font-weight: bold;
+      font-size: 2em;
+  }
+
+  svg.svg-inline--fa.fa-bars {
+      display: none;
+      cursor: pointer;
+  }
+  .menu-btn{
+    display: block;
+   }
+  nav ul {
+      list-style: none;
+      position: fixed;
+      top: -100%;
+      left: 0px;
+      background-color: #000;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      text-align: center;
+      transition: 1s ease-in;
+      opacity: 0.6;
+  }
+
+  #click:checked ~ ul {
+      top: 80px;
+  }
+
+  nav ul li {
+      margin: 0 30px;
+      font-size: 25px;
+      margin: 40px 0;
+  }
+
+  nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.5s;
+      padding: 0px 5px;
+      background-color: #000;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+      border: 1px solid #fff;
+      color: black;
+      background-color: #fff;
+      border-radius: 5px;
+      
+  }
+
+}
+
+footer{
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(195, 198, 201);
+  color: white;
+  height: 15vh;
+  font-size: 20px;
+  
+
+}
+.carousel-inner{
+  z-index: -1;
+}
+
+ body {
+  background-color: rgb(231, 231, 231);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+} 
+
+
+
+#h4h {
+  margin-bottom: 100px;
+  font-weight: 900;
+  font-size: 70px;
+  text-shadow: 0px 0px 7px black;
+}
+.carousel-item img {
+  width: 300px;
+  height: 107vh;
+  display: flex;
+  align-items: center;
+}
+
+
+#main-abt {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  height: auto;
+  padding-top: 30px;
+  
+  
+}
+
+#about {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+  
+}
+h1:hover {
+  text-decoration-line: underline;
+}
+
+.about-item {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  background-color: aliceblue;
+  padding: 15px;
+  margin: 5% auto;
+ 
+}
+
+.about-item i {
+  font-size: 40px;
+  margin: 3% auto;
+  
+}
+
+.about-item h3 {
+  font-size: 35px;
+  
+}
+
+p {
+  font-size: 26px;
+  
+}
+
+.about-item hr {
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.about-item:hover {
+  background-color: rgb(229, 162, 74);
+  padding-top: 40px;
+}
+
+.about-item:hover i {
+  font-size: 100px;
+}
+.about-item:hover h3 {
+  color: black;
+  font-size: 35px;
+}
+.about-item:hover p {
+  color: black;
+  font-size: 20px;
+}
+.about-item:hover hr {
+  background-color: black;
+}
+
+
+
+.pSection {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    gap: 10px;
+    align-items: center; 
+}
+.pContent {
+  width:50%;
+  padding: 20px;
+  color: black;
+}
+
+.pImage {
+  width: 50%;
+  padding: 20px;
+  
+}
+
+#team {
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  
+}
+
+.box .card {
+  position: relative;
+  max-width: 270px;
+  max-height: 0 auto;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  transition: 0.3s ease-in-out;
+  
+}
+
+.box .card:hover {
+  height: 400px;
+  opacity: 0.8;
+  
+}
+
+.box .card .imgBx {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top: -40px;
+  left: 40px;
+  z-index: 2;
+ 
+  
+}
+
+.box .card .imgBx img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 50%;
+  
+  
+}
+
+ .content
+p {
+  font-size: 20px;
+  width: 200px;
+  height: 100px;
+}
+
+.fa-brands {
+  font-size: 30px;
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+}
+.box .card .content {
+  position: relative;
+  margin-top: -40px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+   transition: 0.3s ease-in-out;
+}
+  
+.box .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0px;
+  transition-delay: 0.3s;
+  text-align: center;
+  justify-content: center;
+  height: 270px;
+  top: -30px;
+} 
+/* Styles for devices with a maximum width of 768px (tablets and phones) */
+@media (max-width: 768px) {
+  nav .logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+}
+/* nav{
+  width: 100%;
+} */
+.menu-btn{
+  display: block;
+ }
+
+svg.svg-inline--fa.fa-bars {
+    display: block;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    background-color: #000;
+    /* height: 100vh; */
+    width: 85%;
+    display: block;
+    text-align: center;
+    transition: 1s ease-in;
+    opacity: 0.6;
+}
+.carousel-item {
+  z-index: -1;
+}
+
+#click:checked ~ ul {
+    top: 80px;
+}
+
+nav ul li {
+    margin: 0 30px;
+    font-size: 25px;
+    margin: 40px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 0px 5px;
+    background-color: #000;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border: 1px solid #fff;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+  /* Adjust carousel image size */
+  .carousel-item img {
+      /* width: 100%; */
+      height: auto;
+  }
+
+  /* Adjust about section */
+  #main-abt {
+      padding: 20px;
+      /* width:100%; */
+      display:inline-block;
+  }
+
+  #about {
+      display: block;
+      align-items: center;
+  }
+
+  .about-item {
+      width: 90%; /* Use a wider percentage */
+      margin: 10px 0; /* Add some margin */
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  h1 {
+      font-size: 36px; /* Smaller font size */
+  }
+  .about-item h3 {
+    font-size: 25px;
+}
+p{
+  font-size: 20px;
+}
+
+   .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  } 
+  #sec1, #sec2{
+    display: block;
+  }
+  .pSection {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .pImage {
+      width: 90%;
+      margin: 10px 0;
+      margin-right: 20px;
+     
+  }
+ .pContent{
+  display: none;
+ }
+  footer {
+      font-size: 16px; /* Smaller font size for footer */
+      margin-top: 1250px;
+    }
+}
+
+/* Styles for devices with a maximum width of 480px (phones) */
+@media (max-width: 480px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+  }
+  #main-abt{
+    z-index: -1;
+  }
+
+  .about-item {
+    width: 90wh; /* Use a wider percentage */
+    margin: 10px 0; /* Add some margin */
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.menu-btn{
+  display: block;
+ }
+  h1 {
+      font-size: 28px; /* Even smaller font size */
+  }
+
+
+  .about-item h3 {
+      font-size: 24px; /* Smaller heading */
+  }
+
+  .about-item p {
+      font-size: 20px; /* Smaller paragraph text */
+  }
+
+  .pContent {
+      font-size: 18px; /* Adjust font size */
+      display: none
+  }
+
+  .content p {
+      font-size: 16px; /* Smaller content text */
+  }
+
+  .fa-brands {
+      font-size: 25px; /* Smaller icon size */
+  }
+  footer{
+    margin-top: 1300px;
+    
+  }
+}

@@ -1,0 +1,103 @@
+   
+   
+   
+   
+   nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("https://st.depositphotos.com/1000246/4206/v/450/depositphotos_42063131-stock-illustration-abstract-modern-banner.jpg");
+    padding: 5px;
+    background-size: cover;
+     
+    
+      }
+
+      .container img{
+         width: 20%;
+      }
+      
+   nav ul {
+   display: flex;
+   list-style: none;
+    }
+
+   ul li a {
+    color: white; 
+    text-decoration: none;
+    margin: 20px;
+    padding: 15px;
+    font-weight: bold;
+    justify-content: space-around;
+    position: relative;
+    left: 300px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    
+   }
+
+   li{
+      color: black;
+   }
+   form {
+   
+    margin-left: 900px;
+    position: relative;
+    bottom: 40px;
+   }
+   input{
+    padding: 8px;
+   }
+   /* button{
+    margin-left: 1000px;
+   } */
+   footer{
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("https://st.depositphotos.com/1000246/4206/v/450/depositphotos_42063131-stock-illustration-abstract-modern-banner.jpg");
+    padding: 30px;
+    margin-top: 15%;
+    text-align: center;
+    /* box-shadow: 0px 0px 15px; */
+    background-size: cover;
+   
+   }
+   nav ul li:hover{
+    transition: all 0.7s ease-in-out;
+   } 
+
+   *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+   }
+   #one{
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      gap: 20px;
+      padding: 10px;
+      margin: 0 auto;
+   }
+
+   .container-fluid{
+      width: 100px;
+      height: 50px;
+   }
+   div #container-fluid img{
+       width: 10%;
+       height: 20%;
+       padding: 10px;
+       margin: 10px; 
+   } 
+   .d-flex{
+      position: relative;
+      bottom: 130px;
+   }
+   .d-flex button{
+      color: black;
+   }
+   nav #ul{
+     padding-right: 30px;
+   }

@@ -1,0 +1,415 @@
+
+body {
+  background: #f1f1f1;
+  overflow-x: visible;
+}
+/* header footer start*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  height: 80px;
+  background: gray;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  padding: 0px 20px 0px 50px;
+  z-index: 1;
+}
+.menu-btn{
+  display: none;
+}
+
+nav .logo {
+  width: 90px;
+}
+
+svg.svg-inline--fa.fa-bars {
+  color: black;
+  font-size: 23px;
+ 
+}
+#click {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 30px;
+  font-size: 20px;
+
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 0px 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  border: 1px solid #fff;
+  color: black;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#cartim{
+  width: 30px;
+}
+.cart-quantity {
+  padding-left: 10px;
+ 
+}
+
+
+/* Media Query */
+@media (max-width: 940px) {
+  nav .logo {
+      color: #fff;
+      font-weight: bold;
+      font-size: 2em;
+  }
+  .menu-btn{
+    display: block;
+   }
+
+  svg.svg-inline--fa.fa-bars {
+      display: block;
+      cursor: pointer;
+  }
+
+  nav ul {
+      list-style: none;
+      position: fixed;
+      top: -100%;
+      left: 0px;
+      background-color: #000;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      text-align: center;
+      transition: 1s ease-in;
+      opacity: 0.6;
+  }
+
+  #click:checked ~ ul {
+      top: 80px;
+  }
+
+  nav ul li {
+      margin: 0 30px;
+      font-size: 25px;
+      margin: 40px 0;
+  }
+
+  nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.5s;
+      padding: 0px 5px;
+      background-color: #000;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+      border: 1px solid #fff;
+      color: black;
+      background-color: #fff;
+      border-radius: 5px;
+  }
+
+}
+
+footer{
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(195, 198, 201);
+  color: white;
+  height: 15vh;
+  font-size: 20px;
+  
+
+}
+
+/* main content */
+.services {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.line {
+  margin: 20px;
+}
+.line div:nth-child(1),
+.line div:nth-child(3) {
+  height: 3px;
+  width: 70px;
+  background: red;
+  border-radius: 5px;
+}
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line div:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  background: #f7327a;
+  border-radius: 50%;
+}
+
+#service-banner {
+  width: 100%;
+  height: 80vh;
+  /* padding: 30px; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(serviceimg/ga.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  object-fit: cover;
+  color: white;
+  font-size: 25px;
+
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 70px;
+  line-height: 30px;
+
+}
+#service-banner h1{
+  padding-top: 30px;
+}
+.services h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.box-s {
+  height: 200px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 700px;
+  border-radius: 20px;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  padding: 10px 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  font-size: 17px;
+}
+.box-s:hover {
+  background-color: rgb(229, 162, 74);
+  transition: 0.7s ease;
+  color: black;
+  cursor: pointer;
+}
+.icon {
+  height: 100px;
+  width: 250px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.details {
+  height: 100px;
+}
+.details h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.details p {
+  text-align: center;
+}
+
+/* Media Queries for Phones and Tablets */
+@media (max-width: 768px) { /* For tablets */
+  nav .logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+}
+.menu-btn{
+  display: block;
+ }
+svg.svg-inline--fa.fa-bars {
+    display: block;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: 1s ease-in;
+    opacity: 0.6;
+}
+
+#click:checked ~ ul {
+    top: 80px;
+}
+
+nav ul li {
+    margin: 0 30px;
+    font-size: 25px;
+    margin: 40px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 0px 5px;
+    background-color: #000;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border: 1px solid #fff;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+  .services {
+    width: 90%; /* Make services container smaller */
+    padding: 0 10px; /* Add some horizontal padding */
+  }
+
+  .box-s {
+    width: 100%; /* Full width for service boxes */
+    margin-right: 0; /* Remove margin on right */
+  }
+
+  .icon {
+    width: 50%; /* Make icons responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  footer {
+    font-size: 16px; /* Adjust footer font size */
+  }
+}
+
+@media (max-width: 480px) { /* For phones */
+  
+  nav .logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+}
+.menu-btn{
+  display: block;
+ }
+
+svg.svg-inline--fa.fa-bars {
+    display: block;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: 1s ease-in;
+    opacity: 0.6;
+}
+
+#click:checked ~ ul {
+    top: 80px;
+}
+
+nav ul li {
+    margin: 0 30px;
+    font-size: 25px;
+    margin: 40px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 0px 5px;
+    background-color: #000;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border: 1px solid #fff;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+  .container-f {
+    flex-direction: column;
+  }
+  #service-banner {
+    padding-top: 50px; /* Adjust padding for banner */
+    font-size: 20px; /* Smaller font size for banner text */
+  }
+
+  .services h2 {
+    font-size: 32px; /* Adjust heading size */
+  }
+
+  .details h3 {
+    font-size: 20px; /* Adjust detail heading size */
+  }
+
+  .details p {
+    font-size: 14px; /* Adjust paragraph size */
+  }
+
+  footer {
+    font-size: 14px; /* Smaller footer font size */
+  }
+}
+

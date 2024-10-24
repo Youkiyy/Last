@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Cars</title>
+    <link rel="stylesheet" href="order.css">
+
+    <!-- icon link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <!-- AOS link -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <div id="overAll">
+    <!-- header -->
+     
+<nav>
+  <div class="logo">
+    <img class="logo" src="Header & Footer/gif-unscreen.gif" alt="">
+  </div>
+  <input type="checkbox" id="click"/>
+  <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+  </label>
+  <ul>
+      <li><a class="active" href="about.html">About</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html">car</a></li>
+      <li><a href="services.html">service</a></li>
+      <li><a href="Contact.html">contact</a></li>
+      <!-- <li><img  id= "cartim" src="orderimg/cart-wallpaper-8-removebg-preview.png" alt=""></li>
+      <li class="cart-quantity js-cart-quantity" id="cart1" style="color: black;">0</li> -->
+  </ul>
+</nav>
+
+    <!-- main content -->
+    <div class="container">
+        <h1>Awesome Cars</h1>
+        <div class="product-gallery">
+            <div id="div1">
+            <!-- Product 1 -->
+            <div class="product" data-name="audi" data-price="38.200"  data-aos="fade-right" >
+                <img src="orderimg/auu-removebg-preview.png" alt="">
+                <h2>Audi</h2>
+                <p>Product ID: 87</p>
+                <p>Price: $38,200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product" data-name="BMW" data-price="20.95"  data-aos="fade-left">
+                <img src="orderimg/bmm-removebg-preview.png" alt="">
+                <h2>BMW</h2>
+                <p>Product ID: 127</p>
+                <p>Price: $72,700</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product" data-name="Mercedes" data-price="7.99"  data-aos="fade-right">
+                <img src="orderimg/mer-removebg-preview.png" alt="">
+                <h2>Mercedes</h2>
+                <p>Product ID: 56</p>
+                <p>Price: $54,250</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product" data-name="Mustang" data-price="18.99"  data-aos="fade-left">
+                <img src="orderimg/mus-removebg-preview.png" alt="">
+                <h2>Mustang</h2>
+                <p>Product ID: 2197</p>
+                <p>Price: $33,515</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            </div>
+            <div id="div2">
+            <!-- Product 5 -->
+            <div class="product" data-name="Rolls Royce" data-price="20.67"  data-aos="fade-right">
+                <img src="orderimg/roys-removebg-preview.png" alt="">
+                <h2>Rolls Royce</h2>
+                <p>Product ID: 37</p>
+                <p>Price: $340,500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+             <!-- Product 6 -->
+             <div class="product" data-name="Honda" data-price="20.95" data-aos="fade-left">
+                <img src="orderimg/honda-removebg-preview.png" alt="">
+                <h2>Honda</h2>
+                <p>Product ID: 127</p>
+                <p>Price: $22,330</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+             <!-- Product 7 -->
+             <div class="product" data-name="Range rover" data-price="20.95" data-aos="fade-right">
+                <img src="orderimg/Range_rover-removebg-preview.png" alt="">
+                <h2>Range rover</h2>
+                <p>Product ID: 127</p>
+                <p>Price: $210,625</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+             <!-- Product 8-->
+             <div class="product" data-name="ferrari" data-price="20.95" data-aos="fade-left">
+                <img src="orderimg/ferrari-removebg-preview.png" alt="">
+                <h2>Ferrari</h2>
+                <p>Product ID: 127</p>
+                <p>Price: $210,625</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+            
+        <div id="cart">
+            <i class="fa-solid fa-cart-shopping"></i><span id="cart1">0</span>
+          </div>
+           
+        </div>
+
+        <h2>Your Cart</h2>
+        <ul id="cart-items" style="color: white;"></ul>
+        <p id="total-price" style="color: white;">Total: $0</p>
+        <button  onclick="tap()" id="place-order">Place Order</button>
+        <button id="btn2" onclick="reject()">Reject Order</button>
+    </div>
+
+      
+  <section>
+    <footer>@ 2024 Team Future Vibe.All rights reserved </footer>
+</section>
+</div>
+
+    <script src="order.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
