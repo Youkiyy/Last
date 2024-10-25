@@ -8,7 +8,7 @@
   }
   
   nav {
-  height: 60px;
+  height: 80px;
   background: gray;
   display: flex;
   align-items: center;
@@ -213,7 +213,11 @@ button:hover {
       font-weight: bold;
       font-size: 2em;
   }
- 
+  nav {
+    height: 60px;
+    padding: 0 10px;
+  }
+
 
   svg.svg-inline--fa.fa-bars {
       display: block;
@@ -281,6 +285,11 @@ button:hover {
     width: 100%;
     height: auto;
   }
+  nav {
+    height: 60px;
+    padding: 0 10px;
+  }
+
   .menu-btn{
     display: block;
    }

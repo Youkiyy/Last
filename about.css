@@ -380,9 +380,11 @@ p {
     font-weight: bold;
     font-size: 2em;
 }
-/* nav{
-  width: 100%;
-} */
+nav {
+  height: 60px;
+  padding: 0 10px;
+}
+
 .menu-btn{
   display: block;
  }
@@ -503,6 +505,11 @@ p{
 
 /* Styles for devices with a maximum width of 480px (phones) */
 @media (max-width: 480px) {
+  nav {
+    height: 60px;
+    padding: 0 10px;
+  }
+
   .card{
     display: flex;
     flex-direction: column;

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 nav {
-  height: 60px;
+  height: 80px;
   background: gray;
   display: flex;
   align-items: center;
@@ -69,6 +69,11 @@ nav ul li a:hover
       font-weight: bold;
       font-size: 2em;
   }
+  nav {
+    height: 60px;
+    padding: 0 10px;
+  }
+
   .menu-btn{
     display: block;
    }

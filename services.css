@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
 }
 nav {
-  height: 60px;
+  height: 80px;
   background: gray;
   display: flex;
   align-items: center;
@@ -20,6 +20,7 @@ nav {
   padding: 0px 20px 0px 50px;
   z-index: 1;
 }
+
 .menu-btn{
   display: none;
 }
@@ -78,6 +79,11 @@ nav ul li a.active {
       font-weight: bold;
       font-size: 2em;
   }
+  nav {
+    height: 60px;
+    padding: 0 10px;
+  }
+
   .menu-btn{
     display: block;
    }
@@ -263,6 +269,11 @@ footer{
     font-weight: bold;
     font-size: 2em;
 }
+nav {
+  height: 60px;
+  padding: 0 10px;
+}
+
 .menu-btn{
   display: block;
  }
@@ -338,6 +349,11 @@ nav ul li a.active {
     font-weight: bold;
     font-size: 2em;
 }
+nav {
+  height: 60px;
+  padding: 0 10px;
+}
+
 .menu-btn{
   display: block;
  }
