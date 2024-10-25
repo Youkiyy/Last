@@ -183,14 +183,6 @@ div.trendy{
   display: none;
 }
 
-.slide-img{
-  transform: 1s;
-}
- 
-.slide-img:hover{
-  transform: 20px;
-}
-
 @keyframes slide {
   from {
     transform: translateX(0);
