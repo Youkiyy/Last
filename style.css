@@ -237,7 +237,7 @@ div.trendy{
 
 .skills-slide {
   display: inline-block;
-  animation: 35s slide infinite linear;
+  animation: 30s slide infinite linear;
 }
 
 .skills-slide img {
@@ -246,8 +246,11 @@ div.trendy{
 
 }
 
+.slide-img{
+  transition: 1s;
+}
 .slide-img:hover{
-  transition: transform 1s;
+  transform: scale(1.6);
 }
 
 #feedbacks {
