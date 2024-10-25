@@ -359,3 +359,94 @@ nav ul li a.active {
     height: auto;
   }
 }
+@media (max-width: 600px) {
+  nav {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  nav .logo {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    top: -100%;
+    opacity: 0.9;
+    background-color: #000;
+  }
+
+  nav ul li {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+
+  svg.svg-inline--fa.fa-bars {
+    font-size: 20px;
+  }
+
+  /* Adjust sections */
+  section.bg1 {
+    height: 200px;
+    padding-top: 20px;
+  }
+
+  section.bg1 h1 {
+    font-size: 30px;
+    padding-top: 40px;
+  }
+
+  section.bg1 h2 {
+    font-size: 18px;
+  }
+
+  section.bg2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  section.bg2 div {
+    margin: 20px;
+  }
+
+  section.bg3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.bg3 #sec3div1,
+  section.bg3 #sec3div2 {
+    width: 100%;
+  }
+
+  section.bg3 form input {
+    width: 100%;
+  }
+
+  section.bg3 .map iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  section.bg4 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  section.bg4 div {
+    margin: 10px 0;
+  }
+
+  #icn1 {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
