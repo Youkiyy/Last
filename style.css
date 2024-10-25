@@ -188,7 +188,7 @@ div.trendy{
 }
  
 .slide-img:hover{
-  transform: translateZ(20px);
+  transform: 20px;
 }
 
 @keyframes slide {
