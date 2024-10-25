@@ -15,7 +15,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px 0px 50px;
-  
   z-index: 1;
   
 }
@@ -150,7 +149,7 @@ section.bg1{
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-   padding-top: 30px;
+  padding-top: 30px;
   background-size: cover;
   object-fit: cover;
  
@@ -202,7 +201,7 @@ section.bg3{
 
 section.bg3 h1 {
   padding: 10px;
-  font-size: 40px;
+  font-size: 32px;
  
 }
 section.bg3 h2{
