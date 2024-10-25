@@ -238,7 +238,7 @@ button:hover {
   }
 
   #click:checked ~ ul {
-      top: 80px;
+      top: 60px;
   }
 
   nav ul li {
@@ -321,7 +321,7 @@ nav ul {
 }
 
 #click:checked ~ ul {
-    top: 80px;
+    top: 60px;
 }
 
 nav ul li {
