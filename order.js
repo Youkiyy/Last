@@ -27,16 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
         cartItems.innerHTML = '';
         cart.forEach(item => {
             const li = document.createElement('li');
-            li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+            li.textContent = `${item.name} - $${item.price.toFixed(3)}`;
             cartItems.appendChild(li);
         });
-        totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+        totalPriceElement.textContent = `Total: $${totalPrice.toFixed(3)}`;
     }
 
     // Place order functionality
     placeOrderButton.addEventListener('click', () => {
         if (cart.length > 0) {
-            alert(`Order placed! Total price: $${totalPrice.toFixed(2)}`);
+            alert(`Order placed! Total price: $${totalPrice.toFixed(3)}`);
             cart = [];
             totalPrice = 0;
             updateCart();

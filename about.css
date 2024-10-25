@@ -104,9 +104,9 @@ nav ul li a.active {
   }
 
   nav ul li {
-      margin: 0 30px;
+      /* margin: 0 30px; */
       font-size: 25px;
-      margin: 40px 0;
+      /* margin: 40px 0; */
   }
 
   nav ul li a {
