@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 nav {
   height: 80px;
@@ -299,7 +299,7 @@ nav ul {
 }
 
 #click:checked ~ ul {
-    top: 80px;
+    top: 60px;
 }
 
 nav ul li {
@@ -359,7 +359,7 @@ nav ul li a.active {
     height: auto;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   nav {
     height: 60px;
     padding: 0 10px;
@@ -375,6 +375,9 @@ nav ul li a.active {
     background-color: #000;
   }
 
+  #click:checked ~ ul {
+    top: 60px;
+}
   nav ul li {
     margin: 20px 0;
     font-size: 18px;
