@@ -7,7 +7,7 @@
   box-sizing: border-box !important;
 }
 nav {
-  height: 80px;
+  height: 60px;
   background: gray;
   display: flex;
   width: 100%;
