@@ -200,12 +200,13 @@ section.bg3{
 }
 
 section.bg3 h1 {
-  padding: 10px;
-  font-size: 32px;
+  padding: 10px 5px;
+  font-size: 30px;
  
 }
 section.bg3 h2{
-  padding: 10px;
+  padding: 10px 5px;
+  font-size: 20px;
 }
 section.bg3 #sec3div1{
   width: 50%;
