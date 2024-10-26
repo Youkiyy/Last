@@ -231,7 +231,7 @@ div.trendy{
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-.skills:hover .logos-slide {
+.skills:hover .skills-slide {
   animation-play-state: paused;
 }
 
