@@ -57,6 +57,8 @@ function reject() {
     if(cart > 0) { 
         cart--;
         cartscore.textContent = cart;
+        prompt("What do you want to cancel?");
+        alert("Your order has been cancelled!")
     }
 }
 
