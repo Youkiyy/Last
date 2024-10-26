@@ -208,6 +208,9 @@ footer{
   margin-bottom: 10px;
   margin-top: 20px;
 }
+#service-banner P{
+  padding-top: 40px;
+}
 
 .container {
   display: flex;
